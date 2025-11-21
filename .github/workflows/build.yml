@@ -20,6 +20,9 @@ jobs:
         run: |
           zip -r app_bundle.zip . -x ".github/*" "tests/*"
         #zip recursief 'naam' 'alle mappen (.) behalve github en tests'
+
+      - name: test code
+        run: npm test
         
 
   

@@ -1,0 +1,20 @@
+name: Checkout Example
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    #1 checkout repo
+      - name: Checkout repo
+        uses: actions/checkout@v6
+
+    #2 verification step showing contents of dir
+      - name: verification
+        run: ls -alhR
+
+    
+    

@@ -38,6 +38,9 @@ jobs:
       #nice summary
       - name: Better Test Reports Action
         uses: mridang/action-test-reporter@v1.7.0
+        with:
+          coverage-file: junit.xml
+          upload-coverage-report: true
         
 
   

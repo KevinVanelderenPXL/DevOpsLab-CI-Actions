@@ -34,6 +34,10 @@ jobs:
         with:
           name: unit-test-report
           path: junit.xml
+
+      #nice summary
+      - name: Better Test Reports Action
+        uses: mridang/action-test-reporter@v1.7.0
         
 
   

@@ -1,4 +1,4 @@
-name: dependencies example
+name: build example
 
 on: 
   workflow_dispatch:
@@ -16,8 +16,10 @@ jobs:
         with:
           node-version: '20.x'
 
-      - name: verification
-        run: ls -alhR
+      - name: build code
+        run: |
+          zip -r app_bundle.zip app node_modules
+        #zip recursief 'naam' 'mappen die gezipped moeten worden'
         
 
   

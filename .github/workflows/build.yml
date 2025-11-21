@@ -18,8 +18,8 @@ jobs:
 
       - name: build code
         run: |
-          zip -r app_bundle.zip . -x ".github/*" "tests/*"
-        #zip recursief 'naam' 'alle mappen (.) behalve github en tests'
+          zip -r app_bundle.zip .
+        #zip recursief 'naam' 'alle mappen'
 
       - name: test code
         run: npm test
